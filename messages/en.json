@@ -1,0 +1,200 @@
+{
+  "HomePage": {
+    "title": "AGRITEMIS Platform"
+  },
+  "Navigation": {
+    "home": "Home",
+    "vitiscore": "VitiScore"
+  },
+  "Landing": {
+    "hero_headline": "Agroecological transition cannot be driven by intuition.",
+    "hero_punchline": "Secure your supply chains with the scientific measurement of pesticide risk.",
+    "hero_cta": "Talk to an AGRITEMIS expert",
+    "social_proof_title": "Trusted by industry leaders committed to sustainable agriculture.",
+    "social_proof_context": "Major food groups, cooperatives and luxury brands rely on our indicators to secure their supply chains, support their producers and demonstrate their environmental commitments.",
+    "problem_title": "Pesticide Risk: You can’t manage what you can’t measure.",
+    "problem_dilemma": "Agroecological transition cannot rely on intuition alone. Stricter regulations, consumer demand for transparency and supply chain vulnerability require an objective, robust measure of pesticide impacts.",
+    "indicators_title": "From EIQ to AGRITEMIS",
+    "indicators_title2": "Scientific indicators for operational decision-making",
+    "indicators_main_headline": "5 Indicators for Total Risk Control",
+    "indicators_sub_headline": "A complete suite to assess the impact of your crop protection strategies across all compartments.",
+    "indicators_section_title": "Our 5 AGRITEMIS Indicators",
+    "indicators_section_subtitle": "Rigorous assessment tools to measure the real impact of pesticides on health and the environment",
+    "indicator_learn_more": "Learn more",
+    "indicator_ari_title": "ARI – Acute Toxicity Risk Index",
+    "indicator_ari_short_desc": "Evaluates the immediate risk that a pesticide poses to applicators, workers and nearby residents, based on toxicity and short-term exposure.",
+    "indicator_cri_title": "CRI – Chronic Toxicity Risk Index",
+    "indicator_cri_short_desc": "Measures long-term risks for workers and residents, including carcinogenic, endocrine, neurological and systemic effects from repeated exposure.",
+    "indicator_cori_title": "CORI – Consumer Risk Index",
+    "indicator_cori_short_desc": "Quantifies the risk pesticides (and their metabolites) pose to consumers through food consumption and drinking water.",
+    "indicator_bri_title": "BRI – Biodiversity Risk Index",
+    "indicator_bri_short_desc": "Assesses a pesticide’s impact on bees, birds, earthworms, aquatic organisms and ecosystems, in both short and long term.",
+    "indicator_wari_title": "WARI – Water Risk Index",
+    "indicator_wari_short_desc": "Synthesizes the risk of groundwater and surface water contamination, and the potential effects on consumers and aquatic life.",
+    "benefits_title": "Tangible Benefits for All Supply Chain Stakeholders and Water Agencies.",
+    "benefit_1": "Secure your sourcing: anticipate molecule withdrawals and identify risk zones across your supply chain.",
+    "benefit_2": "Meet label and regulatory requirements: provide measurable proof of performance (Planet-score, CSR, Zero Residue).",
+    "benefit_3": "Drive input reduction: access diagnostics and alternatives powered by our AI tools and indicators.",
+    "benefit_4": "Anticipate risks to drinking water: monitor and report to preserve water resources.",
+    "cta_final_title": "Ready to turn uncertainty into strategy?",
+    "cta_final_paragraph": "Speak with our scientists and agronomy experts to understand how AGRITEMIS indicators can integrate into your information systems and accelerate the transition of your supply chains.",
+    "cta_final_button": "Request an AGRITEMIS demo",
+    "solution_headline": "Our Unique Approach: Data-Driven Agroecological Transition",
+    "solution_description_1": "Agritemis transforms thousands of agricultural, toxicological and environmental data points into actionable insights to secure supply chains and validate ecological commitments.",
+    "solution_description_2": "We provide a reliable, evidence-based measurement of pesticide risk, offering the proof needed to meet EU regulatory requirements and strengthen consumer trust.",
+    "mission_title": "Agritemis: A Mission-Driven Company",
+    "mission_text": "Our mission is written into our bylaws: supporting agroecological transition by measuring and reducing pesticide-related risks, establishing a reliable, shared standard for the entire agri-food sector.",
+    "mission_learn_more": "Learn more about our mission and governance.",
+    "value_prop_measure_title": "1. Measure",
+    "value_prop_measure_desc": "Map the real impact of your pesticide practices. Move from intuition to reliable data via our validated algorithms.",
+    "value_prop_compare_title": "2. Compare",
+    "value_prop_compare_desc": "Precise benchmarking against market standards. Identify regulatory weak points and CSR strengths.",
+    "value_prop_act_title": "3. Act",
+    "value_prop_act_desc": "Implement corrective action plans. Simulate the impact of alternative products and secure your technical pathways."
+  },
+
+  "IndicatorRequest": {
+    "ari_full_name": "ARI – Acute Toxicity Risk Index",
+    "cri_full_name": "CRI – Chronic Toxicity Risk Index",
+    "cori_full_name": "CORI – Consumer Risk Index",
+    "bri_full_name": "BRI – Biodiversity Risk Index",
+    "wari_full_name": "WARI – Water Risk Index",
+
+    "form_intro": "Fill out this form to receive the full documentation for this indicator by email.",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "Email",
+    "function": "Position",
+    "submit": "Receive documentation",
+    "submitting": "Sending...",
+    "back": "Back",
+
+    "success_title": "Request sent!",
+    "success_message": "You’ll shortly receive an email with the link to the indicator’s PDF documentation.",
+    "back_home": "Back to home"
+  },
+
+  "Vitiscore": {
+   "hero_title": "VitiScore: the reference indicator to assess and manage the phytosanitary footprint of vineyard treatments.",
+   "hero_subtitle": "Serving human health, biodiversity and water.",
+   "hero_context": "Over 1,000 spray programmes analysed (France, England, Argentina) to compare, decide and improve.",
+   "hero_cta_analyze": "Request an analysis of my vineyard",
+   "hero_cta_report": "View a sample report",
+
+   "what_title": "What is VitiScore?",
+   "what_intro": "VitiScore is a composite score that combines two complementary dimensions of risk related to crop protection treatments.",
+   "what_abs_title": "Absolute toxicity risk footprint",
+   "what_abs_desc": "The total amount of risk associated with all applied treatments, used to visualise the overall impact of a season.",
+   "what_avg_title": "Average toxicity risk footprint",
+   "what_avg_desc": "The average risk level of the products used, reflecting the quality of product choices and protection strategies.",
+   "what_conclusion": "This dual perspective highlights both the volume of impact and the quality of choices, guiding credible and measurable action plans. VitiScore also helps minimise climatic and regional effects and makes it easier to compare strategies across regions, climates and countries.",
+
+   "how_title": "How is VitiScore calculated?",
+   "how_intro": "VitiScore is based on AGRITEMIS scientific indicators, which assess pesticide risks on human health, consumers, biodiversity and water.",
+   "indicator_ari_subtitle": "Acute risk – human health",
+   "indicator_ari_desc": "Assesses immediate risks for applicators, workers and nearby residents during treatments.",
+   "indicator_cri_subtitle": "Chronic risk – human health",
+   "indicator_cri_desc": "Measures long-term effects of repeated exposure (carcinogenic, endocrine, neurological, etc.).",
+   "indicator_cori_subtitle": "Risk for consumers",
+   "indicator_cori_desc": "Quantifies the risk through food products and drinking water, including metabolites.",
+   "indicator_bri_subtitle": "Risk for biodiversity",
+   "indicator_bri_desc": "Evaluates the impact on bees, birds, earthworms, aquatic organisms and ecosystems.",
+   "indicator_wari_subtitle": "Risk for water",
+   "indicator_wari_desc": "Summarises the risk of groundwater and surface water contamination, for both fauna and consumers.",
+
+   "analyze_title": "What we analyse",
+   "analyze_item_1": "Your spray programmes: products, doses, frequencies, dates, crops and blocks.",
+   "analyze_item_2": "Risk aggregation at plot, farm and group level when multiple estates are involved.",
+   "analyze_item_3": "Internal benchmarks (between estates and blocks) and external benchmarks (basins, regions, years).",
+   "analyze_item_4": "Identification of reduction levers: substitutions, biocontrol, dose adjustments and strategy optimisation.",
+
+   "uses_title": "Key uses of VitiScore",
+   "uses_benchmark_title": "Multi-vineyard benchmarking",
+   "uses_benchmark_desc": "Compare practices between estates, regions and countries to identify leaders, gaps and improvement margins.",
+   "uses_strategy_title": "Strategy validation",
+   "uses_strategy_desc": "Track the effect of changes (before/after), set vintage targets and manage reduction trajectories.",
+   "uses_kpi_title": "Management KPIs",
+   "uses_kpi_desc": "Integrate VitiScore into CSR, purchasing, quality or internal certification dashboards for ongoing monitoring.",
+   "uses_hr_title": "Recognition & HR",
+   "uses_hr_desc": "Use VitiScore as an indicator for internal recognition or bonuses linked to environmental performance.",
+
+   "audience_title": "Who is it for?",
+   "audience_groups_title": "Large wine groups",
+   "audience_groups_desc": "Multi-estate management, international comparisons and alignment of crop protection strategies at group level.",
+   "audience_domains_title": "Vineyards & estates",
+   "audience_domains_desc": "Continuous improvement of practices and structured dialogue between technical teams, management and owners.",
+   "audience_interprof_title": "Interprofessions & value chains",
+   "audience_interprof_desc": "Collective benchmarks, shared reduction pathways and support schemes for members.",
+
+   "deliverables_title": "What you receive",
+   "deliverables_item_1": "VitiScore at plot and farm level, plus a consolidated group synthesis.",
+   "deliverables_item_2": "Risk profile (ARI, CRI, CORI, BRI, WARI) with strengths and points of attention.",
+   "deliverables_item_3": "Visual benchmarks (maps, boxplots, radar charts, time series) to compare situations.",
+   "deliverables_item_4": "Action plan: alternatives, priority substitutions and reduction targets by season or vintage.",
+
+   "data_title": "Data & coverage",
+   "data_text": "More than 1,000 spray programmes have already been analysed (France, England, Argentina), providing robust references to compare your practices. The methodology can be extended to other regions, appellations and countries depending on your projects.",
+
+   "integrations_title": "Integrations & deliverables",
+   "integrations_item_1": "Formats: executive PDF reports, CSV exports and API connections to your information systems, ERPs or farm management software.",
+   "integrations_item_2": "Interoperability: possible connection with your existing databases, traceability tools and BI dashboards.",
+
+   "cta_title": "Analyse your vineyard with VitiScore",
+   "cta_text": "To launch a VitiScore analysis, you upload your spray programmes (CSV/XLSX) and specify your objectives: benchmarking, internal KPIs, communication, bonus schemes, etc. AGRITEMIS provides a quote and, if needed, a sample output on a subset of plots.",
+   "cta_button": "Request a VitiScore demo",
+
+   "disclaimer_text": "VitiScore is a tool developed by AGRITEMIS. It is based on AGRITEMIS indicators (ARI, CRI, CORI, BRI, WARI) and a consolidated, documented and reproducible method."
+ },
+ "Footer": {
+  "brand_name": "AGRITEMIS",
+  "mission": "Mission-driven company dedicated to reducing pesticide-related risks for agricultural and food supply chains and territories.",
+  "nav_title": "Navigation",
+  "nav_home": "Home",
+  "nav_vitiscore": "VitiScore",
+  "nav_indicators": "Indicators",
+  "nav_mission": "Our mission",
+  "contact_title": "Contact",
+  "contact_address": "📍 494 Rue Léon Blum, 34000 Montpellier, France",
+  "contact_phone": "📞 +33 (0)6 00 00 00 00",
+  "contact_email": "contact@agritemis.com",
+  "follow_title": "Follow us",
+  "follow_text": "Get our latest news, scientific insights and publications.",
+  "copyright_suffix": "All rights reserved. Design and scientific data by EcoClimaSol Holding."
+ },
+  "Services": {
+    "main_title": "Our Areas of Expertise",
+    "sub_title": "Comprehensive expertise ranging from active substance analysis to territorial management.",
+    "target_users_label": "Target Users:",
+
+    "service_1_title": "1. Active Substance Risk Analysis",
+    "service_1_desc": "Identification of the most hazardous substances and those at \"regulatory risk\" to anticipate substitutions.",
+    "service_1_targets": "Purchasing centers, cooperatives, water agencies, scientific institutes.",
+
+    "service_2_title": "2. Phytosanitary Product Risk Analysis",
+    "service_2_desc": "Comprehensive assessment (acute, chronic, consumer, biodiversity, water) to compare products and choose lower-impact alternatives.",
+    "service_2_targets": "Water agencies, MSA, NGOs, farmers, software publishers, cooperatives.",
+
+    "service_3_title": "3. Phytosanitary Footprint & Schedules",
+    "service_3_desc": "Scoring of the environmental and sanitary footprint of treatment schedules at the plot/farm scale to benchmark and build an improvement plan.",
+    "service_3_targets": "Farms, cooperatives, supply chains, Planet-Score.",
+
+    "service_4_title": "4. Basin & Territory Analysis",
+    "service_4_desc": "Massive data aggregation to compare practices, understand levers, and steer impact at a group or territory scale.",
+    "service_4_targets": "Agribusiness groups, inter-branch organizations, water agencies, local authorities.",
+
+    "service_5_title": "5. Dashboards & Support",
+    "service_5_desc": "API exports, custom dashboards, training, CSR/CSRD action plan support, substance sheets, and executive reports.",
+    "service_5_targets": "CSR Directors, Technical Managers, Decision Makers.",
+
+    "products_title": "Our Products & Tools",
+    "products_sub_title": "Concrete technological solutions deployed in the field.",
+
+    "product_1_title": "AGRITEMIS Suite",
+    "product_1_desc": "The complete range of proprietary scientific indicators (ARI, CRI, CORI, BRI, WARI) covering human health, biodiversity, and water, including global scoring.",
+    "product_2_title": "VitiScore",
+    "product_2_desc": "The benchmark reference in viticulture. A pesticide footprint measurement based on the analysis of over a thousand international treatment schedules.",
+    "product_3_title": "Chatbot IA alternatives",
+    "product_3_desc": "Robust Chatbot IA for searching alternatives to pesticides in viticulture."
+  }
+
+}
