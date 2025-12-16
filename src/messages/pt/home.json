@@ -1,0 +1,205 @@
+{
+  "hero": {
+    "badge": "Serviços de gestão de riscos",
+    "title": "Informações avançadas sobre riscos para o setor de seguros",
+    "subtitle": "A ClimaVista é um conjunto de serviços que combina gestão de portfólio, concepção de seguros paramétricos e serviços de alerta precoce meteorológico para avaliadores de sinistros, seguradoras, resseguradoras e programas públicos.",
+    "primaryCta": "Solicitar Demonstração",
+    "secondaryCta": "Veja como funciona",
+    
+    "insightsTitle": "Insights & Climate Risks",
+    "viewMore": "View all insights",
+
+    "highlights": [
+      {
+        "title": "Plataforma de inteligência empresarial para carteiras de seguros",
+        "description": "Gerencie seu portfólio com análises e informações avançadas, incluindo dados climáticos e de satélite."
+      },
+      {
+      "title": "Soluções de seguro paramétrico",
+      "description": "Implementação de produtos de seguro paramétrico adaptados a perfis de risco específicos."
+      },
+      {
+        "title": "Alerta precoce para eventos extremos",
+        "description": "Aproveite mais de 200 previsões meteorológicas atualizadas a cada 6 horas para antecipar eventos severos."
+      }
+    ]
+  },
+
+  "logos": {
+    "trustedTitle": "Reconhecido por Líderes Globais em Seguros"
+  },
+
+  "valueProposition": {
+    "bigtitle": "Plataforma ClimaVista",
+    "title": "Construída para hoje, projetada para o amanhã",
+    "subtitle": "O ClimaVista combina experiência científica climática, análise geoespacial e gestão de portfólio para apoiar qualquer produto de seguro incluindo riscos agrícolas e climáticos.",
+    "todayTitle": "Hoje: Seguro climático e agrícola",
+    "todayItems": [
+      "Gestão de apólices e portfólio",
+      "Subscrição e controle de acúmulo",
+      "Verificação de sinistros com dados climáticos e de satélite",
+      "Análise de sinistralidade e campanha",
+      "Detecção de fraude e ferramentas de auditoria",
+      "Sistema de Alerta Precoce baseado em 200+ previsões"
+    ],
+    "tomorrowTitle": "Amanhã: BI de seguros multilinha",
+    "tomorrowItems": [
+      "KPIs unificados em todas as linhas de seguros",
+      "Painéis de portfólio para prêmios, exposições e perdas",
+      "Segmentação de clientes e pontuação de risco",
+      "Detecção de anomalias por IA e suporte à precificação",
+      "Integração com sistemas principais e data lakes corporativos"
+    ],
+    "ctaLabel": "Descubra a Plataforma ClimaVista",
+    "ctaLink": "/pt/product"
+  },
+  "coreServices": {
+    "title": "Um conjunto de serviços para todos os intervenientes no setor dos seguros",
+    "subtitle": "ClimaVista está projetado ao redor de três pilares interconectados que transformam a forma como os atores do setor de seguros gerenciam sua exposição e operações.",
+    "pillars": [
+      {
+        "id": "BI",
+        "title": "Plataforma de Business Intelligence & Gestão de Portfólio",
+        "description": "Gerencie, analise e controle sua exposição e acesse dados climáticos e de satélite avançados.",
+        "focus": "Seguimento dos resultados, da campanha comercial e do acúmulo de exposição."
+      },
+      {
+        "id": "Parametric",
+        "title": "Soluções de Seguro Paramétrico",
+        "description": "Concepção e implementação de produtos de seguro paramétrico personalizados, adaptados aos perfis de risco específicos de seus clientes.",
+        "focus": "Desenvolvimento sob medida, fácil de operar e integrável à plataforma."
+      },
+      {
+        "id": "Alerts",
+        "title": "Alertas Précoce para Eventos Extremos",
+        "description": "Exploite mais de 200 previsões meteorológicas atualizadas a cada 6 horas para antecipar eventos graves e informar seus segurados.",
+        "focus": "Redução da sinistralidade em informando sobre a Granizada, o Raio, as Precipitações e os Ventos."
+      }
+    ]
+  },
+  "lifecycle": {
+    "title": "Digitalizando todo o ciclo de vida da apólice",
+    "subtitle": "O ClimaVista fornece um fluxo de trabalho de ponta a ponta para seguradoras, corretores, resseguradores e esquemas públicos.",
+    "steps": [
+      {
+        "label": "Precificação e Subscrição",
+        "description": "Criação automatizada de apólices, riscos georreferenciados, controle de acúmulo e verificações preliminares de fraude."
+      },
+      {
+        "label": "Criação de Apólice e Gestão de Exposição",
+        "description": "Mapeamento de exposição em tempo real, monitoramento de limites de resseguro e segmentação geográfica personalizada."
+      },
+      {
+        "label": "Monitoramento de Portfólio e Sinistros",
+        "description": "Acompanhe eventos, sinistros, atividade de reguladores e evolução do risco ao longo da safra ou ano da apólice."
+      },
+      {
+        "label": "Ajuste de Perdas e Detecção de Fraude",
+        "description": "Verifique eventos usando radar, chuva, geada, seca e avaliação de danos por satélite."
+      },
+      {
+        "label": "Análise de Campanha e Portfólio",
+        "description": "Análises sobre taxas de perda, distribuição espacial, tendências e KPIs para gestão e resseguradores."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Impacto Comercial Mensurável em Todo o Seu Ecossistema",
+    "subtitle": "A ClimaVista capacita cada interveniente na cadeia de valor de seguros, desde a subscrição até às reclamações.",
+    "audiences": [
+      {
+        "name": "Empresas de Peritos de Sinistros",
+        "icon": "Perito", 
+        "benefits": [
+          "Georreferenciamento preciso das parcelas analisadas pela apólice.",
+          "Imagens NDVI para identificar zonas prioritárias e extensão do dano.",
+          "Extrapolação de perdas no campo sem necessidade de visitas sistemáticas.",
+          "Imagens de eventos climáticos para verificar a causa e a data do sinistro."
+        ]
+      },
+      {
+        "name": "Seguradoras",
+        "icon": "Seguradora", 
+        "benefits": [
+          "Otimização de prémios através de uma avaliação precisa do risco ao nível da parcela.",
+          "Modelagem de risco aprimorada com dados climáticos de alta resolução.",
+          "Redução de custos de deslocamento e gestão de sinistros.",
+          "Melhor retenção de clientes através de uma resolução mais rápida e justa."
+        ]
+      },
+      {
+        "name": "Resseguradoras",
+        "icon": "Resseguradora", 
+        "benefits": [
+          "Visão consolidada da exposição global aos riscos climáticos.",
+          "Validação de modelos de risco com dados de satélite independentes e rastreáveis.",
+          "Análise de cenários climáticos para relatórios de Solvência II.",
+          "Suporte para o desenvolvimento de novos produtos paramétricos."
+        ]
+      }
+    ],
+    "ctaLabel": "Explorar Soluções"
+  },
+  "scienceTech": {
+    "title": "Ciência e tecnologia no núcleo do ClimaVista",
+    "subtitle": "Mais de 20 anos de ciência climática combinada com arquitetura em nuvem moderna e pronta para IA.",
+    "blocks": [
+      {
+        "title": "Dados Climáticos e de Satélite",
+        "items": ["Dados de radar de granizo", "Imagens térmicas GOES", "Análises NDVI Sentinel", "200+ modelos de previsão"]
+      },
+      {
+        "title": "Motor Geoespacial",
+        "items": ["Mapeamento em nível de talhão", "Monitoramento de culturas de alta resolução", "Indicadores por parcela", "Segmentação espacial de risco"]
+      },
+      {
+        "title": "Infraestrutura em Nuvem",
+        "items": ["Hospedagem baseada na AWS", "Alta disponibilidade", "APIs seguras", "Integração com sistemas principais de seguros"]
+      },
+      {
+        "title": "Roteiro de IA",
+        "items": ["Pontuação de risco", "Detecção de anomalias de fraude", "Modelagem de rendimento", "Insights de segmentação de clientes"]
+      }
+    ],
+    "ctaLabel": "Saiba Mais Sobre Nossa Tecnologia"
+  },
+  "featuredModules": {
+    "title": "Explorar módulos principais",
+    "subtitle": "Modulares, escaláveis e projetados para seguradoras e resseguradoras.",
+    "modules": [
+      {
+        "name": "Subscrição e Gestão de Exposição",
+        "description": "Criação automatizada de apólices, controle de acúmulo e alertas de limites de resseguro.",
+        "href": "/modules/underwriting"
+      },
+      {
+        "name": "Sinistros e Ajuste de Perdas",
+        "description": "Verificação de eventos climáticos, análise de imagens de satélite e ferramentas para reguladores.",
+        "href": "/modules/claims"
+      },
+      {
+        "name": "Sistema de Alerta Precoce",
+        "description": "Alertas de risco baseados em mais de 200 previsões atualizadas a cada 6 horas.",
+        "href": "/modules/early-warning"
+      }
+    ],
+    "ctaLabel": "Ver Todos os Módulos"
+  },
+  "experience": {
+    "title": "Com a confiança de líderes em clima e seguros",
+    "subtitle": "O ClimaVista é usado por seguradoras, resseguradoras, governos e grupos agrícolas internacionais.",
+    "sectors": [
+      "Companhias de seguros agrícolas",
+      "Resseguradoras e corretores",
+      "Agências governamentais",
+      "Programas de seguros públicos",
+      "Grandes grupos agrícolas"
+    ]
+  },
+  "finalCta": {
+    "title": "Pronto para modernizar a gestão do seu portfólio de seguros?",
+    "subtitle": "Solicite uma demonstração e descubra como o ClimaVista pode apoiar seus fluxos de trabalho de subscrição, sinistros, análise de risco e inteligência climática.",
+    "primaryCta": "Solicitar Demonstração",
+    "secondaryCta": "Contatar Nossa Equipe"
+  }
+}

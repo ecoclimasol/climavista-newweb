@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Renforcer la Résilience par la Science et l'IA.",
+    "subtitle": "Nous fusionnons l'observation de la Terre, la modélisation climatique avancée et le Machine Learning pour transformer l'incertitude en métriques exploitables.",
+    "ctaLabel": "Explorer nos Solutions",
+    "ctaLink": "/solutions"
+  },
+
+  "intro": {
+    "title": "Le Moteur ClimaVista",
+    "description": "Notre stack technologique traite des pétaoctets de données environnementales pour soutenir l'assurance paramétrique, les systèmes d'alerte précoce et la gestion de portefeuille."
+  },
+
+  "layer1_data": {
+    "title": "1. Couche d'Observation Multi-Sources",
+    "subtitle": "Nous prenons le pouls de la planète en utilisant les constellations satellitaires et les réseaux terrestres les plus fiables.",
+    "sources": [
+      {
+        "name": "Satellites Optiques & Radar",
+        "detail": "Sentinel-2 (NDVI) et Sentinel-1 (SAR) pour le suivi de la santé des cultures, même à travers les nuages."
+      },
+      {
+        "name": "Satellites Géostationnaires",
+        "detail": "GOES & Meteosat pour le suivi des tempêtes en temps réel et la détection rapide des incendies."
+      },
+      {
+        "name": "Réanalyse Climatique",
+        "detail": "ERA5 & CHIRPS fournissant plus de 40 ans de cohérence historique pour la tarification des risques."
+      },
+      {
+        "name": "IoT & Stations au Sol",
+        "detail": "Réseaux de validation locaux pour calibrer les données satellitaires par rapport à la réalité terrain."
+      }
+    ]
+  },
+
+  "layer2_ai": {
+    "title": "2. Intelligence Artificielle & Machine Learning",
+    "subtitle": "Les données brutes sont bruitées. Notre couche IA nettoie, reconstruit et améliore les données pour atteindre une précision de niveau assurantiel.",
+    "features": [
+      {
+        "title": "Reconstruction Intelligente (Smart Gap-Filling)",
+        "description": "Utilisation du Deep Learning (GANs) pour reconstruire les données optiques manquantes masquées par la couverture nuageuse, assurant un suivi continu."
+      },
+      {
+        "title": "Correction de Biais",
+        "description": "Des algorithmes de Machine Learning calibrent les modèles météorologiques à grande échelle par rapport aux données des stations locales pour réduire le risque de base."
+      },
+      {
+        "title": "Modèles de Prédiction de Rendement",
+        "description": "Modèles propriétaires entraînés sur des décennies de données agronomiques pour prévoir les rendements des cultures et déclencher les paiements paramétriques avec précision."
+      },
+      {
+        "title": "Reconnaissance de Formes",
+        "description": "La vision par ordinateur détecte automatiquement les événements extrêmes comme les cicatrices de grêle ou l'étendue des inondations à partir de l'imagerie radar."
+      }
+    ]
+  },
+
+  "layer3_models": {
+    "title": "3. Modélisation Probabiliste",
+    "subtitle": "Pour notre système d'alerte précoce, nous nous appuyons sur la puissance de la prévision d'Ensemble.",
+    "description": "Nous agrégeons plus de 200 membres de prévision provenant de la NOAA (GFS), du ECMWF (IFS) et du DWD (ICON) toutes les 6 heures. Cette approche quantifie l'incertitude et étend les délais d'anticipation de plus de 12 heures par rapport aux modèles déterministes."
+  },
+
+  "validation": {
+    "title": "Validation Scientifique",
+    "text": "Chaque indice et modèle est rigoureusement rétro-testé (backtesté) sur 30 ans de données historiques et validé par des instituts agronomiques locaux pour garantir des déclencheurs équitables et transparents."
+  }
+}

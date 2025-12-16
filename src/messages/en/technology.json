@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Powering Resilience with Deep Science & AI.",
+    "subtitle": "We fuse Earth Observation data, heavy climatic modeling, and advanced Machine Learning to transform uncertainty into actionable metrics.",
+    "ctaLabel": "Explore Our Solutions",
+    "ctaLink": "/solutions"
+  },
+
+  "intro": {
+    "title": "The ClimaVista Engine",
+    "description": "Our technology stack processes petabytes of environmental data to support parametric insurance, early warning systems, and portfolio management."
+  },
+
+  "layer1_data": {
+    "title": "1. Multi-Source Observation Layer",
+    "subtitle": "We capture the pulse of the planet using the most reliable constellations and ground networks.",
+    "sources": [
+      {
+        "name": "Optical & Radar Satellites",
+        "detail": "Sentinel-2 (NDVI), Sentinel-1 (SAR) for crop health monitoring even through clouds."
+      },
+      {
+        "name": "Geostationary Satellites",
+        "detail": "GOES & Meteosat for real-time storm tracking and rapid fire detection."
+      },
+      {
+        "name": "Climate Reanalysis",
+        "detail": "ERA5 & CHIRPS providing 40+ years of historical consistency for risk pricing."
+      },
+      {
+        "name": "IoT & Ground Stations",
+        "detail": "Local validation networks to calibrate satellite proxies against ground truth."
+      }
+    ]
+  },
+
+  "layer2_ai": {
+    "title": "2. Artificial Intelligence & Machine Learning",
+    "subtitle": "Raw data is noisy. Our AI layer cleans, reconstructs, and enhances data to achieve insurance-grade precision.",
+    "features": [
+      {
+        "title": "Smart Gap-Filling",
+        "description": "Using Deep Learning (GANs) to reconstruct missing optical data obscured by cloud cover, ensuring continuous monitoring."
+      },
+      {
+        "title": "Bias Correction",
+        "description": "Machine Learning algorithms calibrate large-scale weather models against local station data to reduce basis risk."
+      },
+      {
+        "title": "Yield Prediction Models",
+        "description": "Proprietary AI models trained on decades of agronomic data to forecast crop yields and trigger parametric payouts accurately."
+      },
+      {
+        "title": "Pattern Recognition",
+        "description": "Computer vision automatically detects extreme events like hail scars or flood extent from radar imagery."
+      }
+    ]
+  },
+
+  "layer3_models": {
+    "title": "3. Probabilistic Modeling",
+    "subtitle": "For our Early Warning System, we rely on the power of 'Ensemble' forecasting.",
+    "description": "We aggregate over 200 forecast members from NOAA (GFS), ECMWF (IFS), and DWD (ICON) every 6 hours. This approach quantifies uncertainty and extends lead times by 12+ hours compared to deterministic models."
+  },
+
+  "validation": {
+    "title": "Scientific Validation",
+    "text": "Every index and model is rigorously backtested against 30 years of historical data and validated by local agronomic institutes to ensure fair and transparent triggers."
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "hero": {
+    "badge": "Risk management services",
+    "title": "Advanced Risk Intelligence for the Insurance Sector",
+    "subtitle": "ClimaVista is a suite of services combining portfolio management, parametric insurance design and weather early warning services for claims adjusters, insurers, reinsurers and public programs.",
+    "primaryCta": "Request a Demo",
+    "secondaryCta": "See How It Works",
+    
+    "insightsTitle": "Insights & Risk management",
+    "viewMore": "View all insights",
+
+    "highlights": [
+      {
+        "title": "Portfolio Business Intelligence Platform",
+        "description": "Manage your portfolio with advanced analytics and insights, including satellite and climate data."
+      },
+      {
+      "title": "Parametric Insurance Solutions",
+      "description": "Implementation of parametric insurance products tailored to specific risk profiles."
+      },
+      {
+      "title": "Early warning for extreme events",
+      "description": "Leverage more than 200 weather forecasts updated every 6 hours to anticipate severe events."
+      }
+    ]
+  },
+
+  "logos": {
+    "trustedTitle": "Trusted by Global Leaders in Insurance"
+  },
+
+  "valueProposition": {
+    "bigtitle": "ClimaVista platform",
+    "title": "Built for today, engineered for tomorrow",
+    "subtitle": "ClimaVista combines scientific climate expertise, geospatial analytics and insurance portfolio management to support all insurance products as well as agricultural and climate-sensitive risks.",
+    "todayTitle": "Today: Climate & agricultural insurance",
+    "todayItems": [
+      "Policy and portfolio management",
+      "Underwriting and accumulation control",
+      "Claim verification with climate and satellite data",
+      "Loss ratio and campaign analytics",
+      "Fraud detection and audit tools",
+      "Early Warning System based on 200+ updated forecasts"
+    ],
+    "tomorrowTitle": "Tomorrow: Multi-line insurance BI",
+    "tomorrowItems": [
+      "Unified KPIs across all insurance lines",
+      "Portfolio dashboards for premiums, exposures and losses",
+      "Client segmentation and risk scoring",
+      "AI-driven anomaly detection and pricing support",
+      "Integration with core systems and enterprise data lakes"
+    ],
+    "ctaLabel": "Discover ClimaVista Platform",
+    "ctaLink": "/en/product"
+  },
+  "coreServices": {
+    "title": "A suite of services for all players in the insurance sector",
+    "subtitle": "ClimaVista is designed around three interconnected pillars that transform how insurance industry players manage their exposure and operations.",
+    "pillars": [
+      {
+        "id": "BI",
+        "title": "Business Intelligence Platform & Portfolio Management",
+        "description": "Manage and analyze your portfolio, master your exposure and access advanced satellite and climate data.",
+        "focus": "Tracking results, commercial campaigns and exposure accumulation."
+      },
+      {
+        "id": "Parametric",
+        "title": "Parametric Insurance Solutions",
+        "description": "Design and implementation of custom parametric insurance products tailored to specific risk profiles of your clients.",
+        "focus": "Custom development, easy operation and platform integration."
+      },
+      {
+        "id": "Alerts",
+        "title": "Early Warning for Extreme Events",
+        "description": "Leverage more than 200 weather forecasts updated every 6 hours to anticipate severe events and inform your insured.",
+        "focus": "Reduction of claim frequency by informing on Hail, Lightning, Rainfall and Wind."
+      }
+    ]
+  },
+  "lifecycle": {
+    "title": "Digitizing the entire insurance policy lifecycle",
+    "subtitle": "ClimaVista provides an end-to-end workflow for insurers, brokers, reinsurers and public schemes.",
+    "steps": [
+      {
+        "label": "Pricing & Underwriting",
+        "description": "Automated policy creation, georeferenced risks, accumulation control and preliminary fraud checks."
+      },
+      {
+        "label": "Policy Creation & Exposure Management",
+        "description": "Real-time exposure mapping, reinsurance limit monitoring and custom geographic segmentation."
+      },
+      {
+        "label": "Portfolio & Claim Monitoring",
+        "description": "Track events, claims, adjuster activity and risk evolution throughout the season or policy year."
+      },
+      {
+        "label": "Loss Adjustment & Fraud Detection",
+        "description": "Verify events using radar, rainfall, frost, drought and satellite damage assessment."
+      },
+      {
+        "label": "Campaign & Portfolio Analysis",
+        "description": "Analytics on loss ratios, spatial distribution, trends and KPIs for management and reinsurers."
+      }
+    ]
+  },
+
+  "benefits": {
+    "title": "Measurable Business Impact Across Your Ecosystem",
+    "subtitle": "ClimaVista empowers every player in the insurance value chain, from underwriting to claims.",
+    "audiences": [
+      {
+        "name": "Claims Adjuster Companies",
+        "icon": "Adjuster", 
+        "benefits": [
+          "Accurate georeferencing of policy-analyzed plots.",
+          "NDVI images to identify priority zones and extent of damage.",
+          "Extrapolation of field losses without systematic on-site visits.",
+          "Climate event images to verify cause and date of loss."
+        ]
+      },
+      {
+        "name": "Insurers",
+        "icon": "Insurer", 
+        "benefits": [
+          "Optimized premiums through accurate plot-level risk assessment.",
+          "Enhanced risk modeling with high-resolution climate data.",
+          "Reduction in travel and claims management costs.",
+          "Improved customer retention through faster and fairer resolution."
+        ]
+      },
+      {
+        "name": "Reinsurers",
+        "icon": "Reinsurer", 
+        "benefits": [
+          "Consolidated view of global climate risk exposure.",
+          "Risk model validation with independent and traceable satellite data.",
+          "Climate scenario analysis for Solvency II reporting.",
+          "Support for the development of new parametric products."
+        ]
+      }
+    ],
+    "ctaLabel": "Explore Solutions"
+  },
+
+  "scienceTech": {
+    "title": "Science and technology at the core of ClimaVista",
+    "subtitle": "More than 20 years of climate science combined with modern cloud and AI-ready architecture.",
+    "blocks": [
+      {
+        "title": "Climate & Satellite Data",
+        "items": ["Radar hail data", "GOES thermal imagery", "Sentinel NDVI analytics", "200+ forecast models"]
+      },
+      {
+        "title": "Geospatial Engine",
+        "items": ["Field-level mapping", "High-resolution crop monitoring", "Per-parcel indicators", "Spatial risk segmentation"]
+      },
+      {
+        "title": "Cloud Infrastructure",
+        "items": ["AWS-based hosting", "High availability", "Secure APIs", "Integration with insurance core systems"]
+      },
+      {
+        "title": "AI Roadmap",
+        "items": ["Risk scoring", "Fraud anomaly detection", "Yield and crop modelling", "Client segmentation insights"]
+      }
+    ],
+    "ctaLabel": "Learn More About Our Technology"
+  },
+
+  "featuredModules": {
+    "title": "Explore key modules",
+    "subtitle": "Modular, scalable and designed for insurers and reinsurers.",
+    "modules": [
+      {
+        "name": "Underwriting & Exposure Management",
+        "description": "Automated policy creation, accumulation control and reinsurance limit alerts.",
+        "href": "/modules/underwriting"
+      },
+      {
+        "name": "Claims & Loss Adjustment",
+        "description": "Climate event verification, satellite imagery analysis and adjuster tools.",
+        "href": "/modules/claims"
+      },
+      {
+        "name": "Early Warning System",
+        "description": "Risk alerts based on more than 200 forecasts updated every 6 hours.",
+        "href": "/modules/early-warning"
+      }
+    ],
+    "ctaLabel": "View All Modules"
+  },
+
+  "experience": {
+    "title": "Trusted by leaders in climate and insurance",
+    "subtitle": "ClimaVista is used by insurers, reinsurers, governments and international agricultural groups.",
+    "sectors": [
+      "Agricultural insurance companies",
+      "Reinsurers and brokers",
+      "Government agencies",
+      "Public insurance programs",
+      "Large agricultural groups"
+    ]
+  },
+
+  "finalCta": {
+    "title": "Ready to modernize your insurance portfolio management?",
+    "subtitle": "Request a demo and discover how ClimaVista can support your underwriting, claims, risk analytics and climate intelligence workflows.",
+    "primaryCta": "Request a Demo",
+    "secondaryCta": "Contact Our Team"
+  }
+}

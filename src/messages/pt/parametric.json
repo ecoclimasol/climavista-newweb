@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "Seguro Paramétrico: Onde a Velocidade Encontra a Precisão.",
+    "subtitle": "Desenvolva soluções personalizadas, rápidas de operar e respaldadas pelos dados climáticos mais confiáveis do mundo.",
+    "ctaLabel": "Projete sua Solução Paramétrica",
+    "ctaLink": "/contact"
+  },
+  
+  "value": {
+    "title": "Desbloqueie Valor Onde o Indenizatório Falha.",
+    "subtitle": "O seguro paramétrico simplifica a gestão de sinistros e garante liquidez imediatamente após um evento.",
+    "features": [
+      {
+        "icon": "vitesse",
+        "label": "Pagamentos Quase Instantâneos",
+        "description": "Os pagamentos são acionados automaticamente pelo índice, eliminando os longos processos de ajuste de sinistros."
+      },
+      {
+        "icon": "cout",
+        "label": "Redução de Custos Operacionais",
+        "description": "Os custos de perícia e administração de sinistros são reduzidos ao mínimo absoluto."
+      },
+      {
+        "icon": "transparence",
+        "label": "Transparência Total",
+        "description": "As regras de acionamento são claras desde o início, eliminando disputas com os segurados."
+      }
+    ]
+  },
+  
+  "process": {
+    "title": "Nosso Processo: Do Risco Personalizado à Implementação Operacional.",
+    "subtitle": "Trabalhamos com suas equipes para criar um produto paramétrico confiável, simples de operar e adaptado aos seus clientes agrícolas.",
+    "steps": [
+      {
+        "icon": "design",
+        "label": "Desenho do Acionador (Trigger)",
+        "description": "Definição do índice climático (temperatura, precipitação, índice de saúde vegetal) e validação do 'basis risk' através de backtesting."
+      },
+      {
+        "icon": "data",
+        "label": "Certificação de Dados",
+        "description": "Uso de fontes de dados certificadas (GOES, Sentinel, CHIRPS) para garantir a rastreabilidade e a integridade do índice."
+      },
+      {
+        "icon": "operation",
+        "label": "Implementação e Operações",
+        "description": "Integração completa na plataforma ClimaVista para uma gestão simples da apólice e um cálculo automático do pagamento."
+      }
+    ]
+  },
+
+  "expertise": {
+    "title": "Experiência Comprovada pela Indústria e Reguladores.",
+    "subtitle": "Não apenas projetamos produtos; validamos sua confiabilidade no campo e perante as autoridades.",
+    "cases": [
+      {
+        "label": "Aprovação Regulatória na Argentina",
+        "description": "Desenvolvemos o primeiro seguro paramétrico de seca para milho e soja aprovado pela Superintendencia de Seguros de la Nación (SSN)."
+      },
+      {
+        "label": "Proteção de Receitas de Energia",
+        "description": "Projetamos soluções paramétricas (tipo swap) contra variações na produção hidrelétrica devido a riscos climáticos."
+      },
+      {
+        "label": "Diversificação de Riscos Especializados",
+        "description": "Criação de proteções contra riscos climáticos para o setor de turismo durante feriados e danos a pomares contra geadas."
+      }
+    ]
+  },
+
+  "technology": {
+    "title": "Precisão do Índice: A Ciência por Trás da Confiança.",
+    "sources": [
+      "Índice de Vegetação (NDVI) via **Sentinel-2** para monitoramento da saúde das culturas.",
+      "Dados de Tempestades e Geada via **GOES** para detecção rápida de eventos.",
+      "Modelos de Precipitação via **CHIRPS** para cobertura histórica e em tempo real.",
+      "Integração de dados de **Radar** para precisão aprimorada em granizo e precipitações intensas."
+    ]
+  }
+}

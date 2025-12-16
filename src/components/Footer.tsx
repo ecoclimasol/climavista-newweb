@@ -1,107 +1,136 @@
-"use client";
+// src/components/Footer.tsx
+import React from 'react';
+import Link from 'next/link';
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+// ⚠️ DÉFINITION DE L'INTERFACE (ASSUREZ-VOUS QU'ELLE CORRESPOND AU JSON)
+interface FooterData {
+  mission: string;
+  columns: {
+    solutions: string;
+    tech: string;
+    contact_offices: string;
+  };
+  links: {
+    home: string;
+    bi: string;
+    parametric: string;
+    early_warning: string;
+    technology: string;
+    contact: string;
+    legal: string;
+    privacy: string;
+  };
+  offices: {
+    americas_title: string;
+    americas_address: string;
+    global_title: string;
+    global_address: string;
+    email: string;
+  };
+  copyright: string;
+}
 
-export default function Footer() {
-  const t = useTranslations("Footer");
-  const currentYear = new Date().getFullYear();
+interface FooterProps {
+  data: FooterData;
+  locale: string; 
+}
+
+// Fonction utilitaire pour générer des liens de navigation
+const NavLink = ({ href, label, locale }: { href: string, label: string, locale: string }) => (
+  <Link 
+    href={`/${locale}${href}`} 
+    className="text-slate-400 hover:text-blue-400 transition-colors"
+  >
+    {label}
+  </Link>
+);
+
+
+const Footer: React.FC<FooterProps> = ({ data, locale }) => {
+  
+  // Utiliser \n pour simuler les sauts de ligne dans l'adresse
+  // Utilisation de dangerouslySetInnerHTML pour injecter les <br/>
+  const americasAddressFormatted = data.offices.americas_address.replace(/\n/g, '<br/>');
+  const globalAddressFormatted = data.offices.global_address.replace(/\n/g, '<br/>');
 
   return (
-    <footer className="bg-slate-900 text-slate-300 border-t border-slate-700 mt-20">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
-        {/* LOGO + MISSION */}
-        <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-white">
-            {t("brand_name")}
-          </h3>
-          <p className="text-sm leading-relaxed text-slate-400">
-            {t("mission")}
-          </p>
-        </div>
-
-        {/* NAVIGATION */}
-        <div className="space-y-4">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-200">
-            {t("nav_title")}
-          </h4>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <Link href="/" className="hover:text-white">
-                {t("nav_home")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/vitiscore" className="hover:text-white">
-                {t("nav_vitiscore")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/indicateurs" className="hover:text-white">
-                {t("nav_indicators")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/mission" className="hover:text-white">
-                {t("nav_mission")}
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        {/* CONTACT */}
-        <div className="space-y-4">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-200">
-            {t("contact_title")}
-          </h4>
-          <ul className="space-y-2 text-sm text-slate-400">
-            <li>{t("contact_address")}</li>
-            <li>{t("contact_phone")}</li>
-            <li>
-              ✉️{" "}
-              <a
-                href="mailto:contact@agritemis.com"
-                className="hover:text-white"
-              >
-                {t("contact_email")}
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* FOLLOW US */}
-        <div className="space-y-4">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-200">
-            {t("follow_title")}
-          </h4>
-          <div className="flex items-center gap-4 text-xl">
-            <a
-              href="https://www.linkedin.com/company/agritemis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="mailto:contact@agritemis.com"
-              className="hover:text-white"
-            >
-              <FaEnvelope />
-            </a>
+    <footer className="bg-slate-900 border-t border-slate-700/50 py-16">
+      <div className="container mx-auto px-6 max-w-7xl">
+        
+        {/* Grille principale du Footer (3 Colonnes) */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-slate-700 pb-12">
+          
+          {/* Colonne 1: Logo & Mission */}
+          <div className="md:col-span-1">
+            <Link href={`/${locale}`} className="text-2xl font-bold text-white mb-4 block">
+                ClimaVista
+            </Link>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              {data.mission}
+            </p>
+            {/* Renseignements généraux de contact */}
+            <div className="mt-6">
+                <a 
+                    // Supprime le "Email : " pour l'URL mailto:
+                    href={`mailto:${data.offices.email.replace('Email : ', '')}`} 
+                    className="text-sm font-semibold text-blue-400 hover:text-blue-300"
+                >
+                    {data.offices.email}
+                </a>
+            </div>
+          </div>
+          
+          {/* Colonne 2: Navigation (Solutions & Tech) */}
+          <div className="md:col-span-1">
+            <h3 className="text-lg font-semibold text-white mb-4">{data.columns.solutions}</h3>
+            <ul className="space-y-3 text-sm">
+                <li><NavLink href="/" label={data.links.home} locale={locale} /></li>
+                <li><NavLink href="/parametric" label={data.links.parametric} locale={locale} /></li>
+                <li><NavLink href="/early-warning" label={data.links.early_warning} locale={locale} /></li>
+                <li><NavLink href="/bi" label={data.links.bi} locale={locale} /></li>
+                <li className="pt-4">
+                  <h3 className="text-lg font-semibold text-white mb-2">{data.columns.tech}</h3>
+                  <NavLink href="/technology" label={data.links.technology} locale={locale} />
+                </li>
+            </ul>
           </div>
 
-          <p className="text-xs text-slate-500">
-            {t("follow_text")}
-          </p>
-        </div>
-      </div>
+          {/* Colonnes 3 & 4: Bureaux & Adresses */}
+          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {/* Bureau Amériques (Argentine) */}
+            <div>
+                <h3 className="text-lg font-semibold text-white mb-4">{data.offices.americas_title}</h3>
+                <address className="not-italic text-sm text-slate-400 leading-relaxed">
+                    <div dangerouslySetInnerHTML={{ __html: americasAddressFormatted }} />
+                </address>
+            </div>
+            {/* Bureau Global (France) */}
+            <div>
+                <h3 className="text-lg font-semibold text-white mb-4">{data.offices.global_title}</h3>
+                 <address className="not-italic text-sm text-slate-400 leading-relaxed">
+                    <div dangerouslySetInnerHTML={{ __html: globalAddressFormatted }} />
+                 </address>
+            </div>
+          </div>
 
-      {/* COPYRIGHT */}
-      <div className="border-t border-slate-700 px-6 py-4 text-center text-xs text-slate-500">
-        © {currentYear} AGRITEMIS — {t("copyright_suffix")}
+        </div>
+        
+        {/* Bande inférieure (Copyright & Légal) */}
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 text-sm text-slate-500">
+          <p>{data.copyright}</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+             <Link href={`/${locale}/legal`} className="hover:text-white transition-colors">
+                {data.links.legal}
+             </Link>
+             <Link href={`/${locale}/privacy`} className="hover:text-white transition-colors">
+                {data.links.privacy}
+             </Link>
+          </div>
+        </div>
+        
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

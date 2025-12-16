@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Impulsando la Resiliencia con Ciencia Profunda e IA.",
+    "subtitle": "Fusionamos la observación de la Tierra, modelos climáticos robustos y Machine Learning avanzado para transformar la incertidumbre en métricas accionables.",
+    "ctaLabel": "Explorar Soluciones",
+    "ctaLink": "/solutions"
+  },
+
+  "intro": {
+    "title": "El Motor ClimaVista",
+    "description": "Nuestra tecnología procesa petabytes de datos ambientales para respaldar seguros paramétricos, sistemas de alerta temprana y gestión de carteras."
+  },
+
+  "layer1_data": {
+    "title": "1. Capa de Observación Multi-Fuente",
+    "subtitle": "Capturamos el pulso del planeta utilizando las constelaciones y redes terrestres más fiables.",
+    "sources": [
+      {
+        "name": "Satélites Ópticos y de Radar",
+        "detail": "Sentinel-2 (NDVI) y Sentinel-1 (SAR) para monitorear la salud de los cultivos incluso a través de las nubes."
+      },
+      {
+        "name": "Satélites Geoestacionarios",
+        "detail": "GOES y Meteosat para el seguimiento de tormentas en tiempo real y detección rápida de incendios."
+      },
+      {
+        "name": "Reanálisis Climático",
+        "detail": "ERA5 y CHIRPS proporcionan más de 40 años de coherencia histórica para la tarificación de riesgos."
+      },
+      {
+        "name": "IoT y Estaciones Terrestres",
+        "detail": "Redes de validación local para calibrar los datos satelitales con la realidad del terreno."
+      }
+    ]
+  },
+
+  "layer2_ai": {
+    "title": "2. Inteligencia Artificial y Machine Learning",
+    "subtitle": "Los datos brutos tienen ruido. Nuestra capa de IA limpia, reconstruye y mejora los datos para lograr una precisión de nivel asegurador.",
+    "features": [
+      {
+        "title": "Relleno Inteligente (Smart Gap-Filling)",
+        "description": "Uso de Deep Learning (GANs) para reconstruir datos ópticos faltantes ocultos por la nubosidad, asegurando un monitoreo continuo."
+      },
+      {
+        "title": "Corrección de Sesgos",
+        "description": "Algoritmos de Machine Learning calibran modelos meteorológicos a gran escala con datos de estaciones locales para reducir el riesgo de base."
+      },
+      {
+        "title": "Modelos de Predicción de Rendimiento",
+        "description": "Modelos propietarios entrenados con décadas de datos agronómicos para prever el rendimiento de los cultivos y activar pagos paramétricos con precisión."
+      },
+      {
+        "title": "Reconocimiento de Patrones",
+        "description": "La visión por computadora detecta automáticamente eventos extremos como cicatrices de granizo o extensión de inundaciones a partir de imágenes de radar."
+      }
+    ]
+  },
+
+  "layer3_models": {
+    "title": "3. Modelado Probabilístico",
+    "subtitle": "Para nuestro sistema de alerta temprana, confiamos en el poder del pronóstico de 'Ensamble'.",
+    "description": "Agregamos más de 200 miembros de pronóstico de NOAA (GFS), ECMWF (IFS) y DWD (ICON) cada 6 horas. Este enfoque cuantifica la incertidumbre y extiende los tiempos de anticipación en más de 12 horas en comparación con los modelos deterministas."
+  },
+
+  "validation": {
+    "title": "Validación Científica",
+    "text": "Cada índice y modelo es rigurosamente probado (backtesting) con 30 años de datos históricos y validado por institutos agronómicos locales para garantizar disparadores justos y transparentes."
+  }
+}

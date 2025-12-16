@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "Da Gestão Reativa de Sinistros à Proteção Proativa.",
+    "subtitle": "Um Sistema de Alerta Precoce (EWS) via satélite que oferece ao seu portfólio uma vantagem de 12 horas contra riscos climáticos.",
+    "ctaLabel": "Solicitar Demonstração",
+    "ctaLink": "/contact"
+  },
+  
+  "challenge": {
+    "title": "A Mudança de Paradigma Climático",
+    "subtitle": "Os modelos de risco tradicionais são reativos. Esperar que o sinistro aconteça não é mais uma estratégia viável.",
+    "points": [
+      {
+        "title": "Volatilidade Crescente",
+        "description": "A volatilidade climática na América Latina está aumentando a frequência e severidade de eventos extremos como granizo e inundações repentinas."
+      },
+      {
+        "title": "Impacto Direto",
+        "description": "Tempestades e ventos fortes geram milhares de sinistros anualmente, impactando diretamente sua rentabilidade."
+      },
+      {
+        "title": "Necessidade de Ação",
+        "description": "A indústria precisa de uma mudança de paradigma em direção à prevenção ativa e comunicação com o cliente."
+      }
+    ]
+  },
+
+  "solution": {
+    "title": "A Vantagem Proativa",
+    "subtitle": "Nosso EWS protege seus segurados e reduz sinistros através de três pilares fundamentais.",
+    "steps": [
+      {
+        "icon": "anticipation",
+        "title": "Antecipação",
+        "description": "Alertas emitidos com pelo menos 12 horas de antecedência antes que o evento impacte o ativo."
+      },
+      {
+        "icon": "precision",
+        "title": "Precisão",
+        "description": "Identificação de riscos em nível local com atualizações horárias e detalhe geográfico preciso."
+      },
+      {
+        "icon": "action",
+        "title": "Ação",
+        "description": "Permite comunicação preventiva (SMS/App) aos segurados para mitigar danos antes que ocorram."
+      }
+    ]
+  },
+
+  "tech": {
+    "title": "Confiabilidade Exponencial: A Abordagem 'Ensemble'",
+    "subtitle": "Não dependemos de uma única previsão. Agregamos os melhores modelos do mundo para eliminar a incerteza.",
+    "description": "A cada 6 horas, combinamos mais de 200 previsões únicas, incluindo múltiplos 'membros' dos modelos de conjunto (EPS) mais avançados. Isso nos permite quantificar a probabilidade com uma confiança estatística superior.",
+    "models": [
+      { "name": "ECMWF (IFS)", "origin": "Europa", "detail": "51 Membros - Res 25km" },
+      { "name": "NOAA (GFS)", "origin": "EUA", "detail": "31 Membros - Res 13km" },
+      { "name": "DWD (ICON)", "origin": "Alemanha", "detail": "40 Membros - Res 11km" },
+      { "name": "UKMO", "origin": "Reino Unido", "detail": "Met Office - Res 10km" }
+    ]
+  },
+
+  "integration": {
+    "title": "Integração API Perfeita",
+    "subtitle": "Automatize a gestão de riscos diretamente em seus sistemas CRM e de administração de apólices.",
+    "flow": {
+      "step1": "Sistemas Seguradora (CRM, Admin Apólices)",
+      "step2": "Gateway API ClimaVista",
+      "step3": "Alertas Automatizados (SMS, Email, App)"
+    }
+  },
+
+  "trust": {
+    "title": "A Confiança dos Líderes da Indústria",
+    "text": "Na Argentina, a Allianz confia no Sistema de Alerta Precoce da EcoClimaSol para proteger seus clientes e gerenciar proativamente os riscos climáticos."
+  }
+}

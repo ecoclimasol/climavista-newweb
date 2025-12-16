@@ -1,9 +1,15 @@
 import createMiddleware from 'next-intl/middleware';
-import {routing} from './i18n/routing';
 
-export default createMiddleware(routing);
-
+export default createMiddleware({
+  // La liste des langues que vous supportez
+  locales: ['en', 'fr', 'es', 'pt'],
+ 
+  // La langue par défaut si l'utilisateur arrive sur "/"
+  defaultLocale: 'fr'
+});
+ 
 export const config = {
-  // Applique le middleware à toutes les routes sauf les fichiers statiques
-  matcher: ['/', '/(fr|en|es)/:path*']
+  // Cette ligne permet au middleware de s'activer sur la racine "/"
+  // et d'ignorer les fichiers statiques (images, css, etc.)
+  matcher: ['/', '/(fr|en|es|pt)/:path*']
 };

@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "mission": "Transformamos a incerteza climática em resiliência financeira através de soluções de seguros e alertas baseadas em ciência e IA.",
+    
+    "columns": {
+      "solutions": "Nossas Soluções",
+      "tech": "Tecnologia",
+      "contact_offices": "Escritórios e Contato"
+    },
+    
+    "links": {
+      "home": "Início",
+      "bi": "Inteligência de Negócios",
+      "parametric": "Seguro Paramétrico",
+      "early_warning": "Sistema de Alerta Precoce",
+      "technology": "Tecnologia e IA",
+      "contact": "Contato",
+      "legal": "Avisos Legais",
+      "privacy": "Política de Privacidade"
+    },
+    
+    "offices": {
+      "americas_title": "Américas",
+      "americas_address": "Ecoclimasol SA\nTacuari 119-1C\nCABA (1071), Argentina",
+      "global_title": "Europa e Global",
+      "global_address": "Ecoclimasol SASU\nImmeuble MIBI\n672 Rue du Mas Verchant\nCS 37777 - 34967 Montpellier Cedex 02, France",
+      "email": "Email : info@climavista.com"
+    },
+    
+    "copyright": "© 2025 ClimaVista. Todos os direitos reservados."
+  }
+}

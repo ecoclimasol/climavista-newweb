@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "Parametric Insurance: Where Speed Meets Precision.",
+    "subtitle": "Develop tailored, fast-to-operate solutions, backed by the world's most reliable climate data.",
+    "ctaLabel": "Design Your Parametric Solution",
+    "ctaLink": "/contact"
+  },
+  
+  "value": {
+    "title": "Unlock Value Where Indemnity Fails.",
+    "subtitle": "Parametric insurance simplifies claims management and ensures liquidity immediately following an event.",
+    "features": [
+      {
+        "icon": "vitesse",
+        "label": "Near-Instant Payouts",
+        "description": "Payouts are automatically triggered by the index, eliminating lengthy claims adjustment processes."
+      },
+      {
+        "icon": "cout",
+        "label": "Reduced Operational Costs",
+        "description": "Claims assessment and administrative costs are reduced to an absolute minimum."
+      },
+      {
+        "icon": "transparence",
+        "label": "Total Transparency",
+        "description": "Payout rules are clear from the start, eliminating disputes with policyholders."
+      }
+    ]
+  },
+  
+  "process": {
+    "title": "Our Process: From Tailored Risk to Operational Implementation.",
+    "subtitle": "We work with your teams to create a reliable parametric product that is simple to operate and tailored to your agricultural clients.",
+    "steps": [
+      {
+        "icon": "design",
+        "label": "Trigger Design",
+        "description": "Defining the climatic index (temperature, precipitation, vegetation health index) and validating 'basis risk' through backtesting."
+      },
+      {
+        "icon": "data",
+        "label": "Data Certification",
+        "description": "Using certified data sources (GOES, Sentinel, CHIRPS) to ensure the traceability and integrity of the index."
+      },
+      {
+        "icon": "operation",
+        "label": "Implementation & Operations",
+        "description": "Full integration into the ClimaVista platform for simple policy management and automated payout calculation."
+      }
+    ]
+  },
+
+  "expertise": {
+    "title": "Expertise Proven by Industry and Regulators.",
+    "subtitle": "We don't just design products; we validate their reliability on the ground and before authorities.",
+    "cases": [
+      {
+        "label": "Regulatory Approval in Argentina",
+        "description": "Developed the first parametric drought insurance for corn and soybean approved by the Superintendencia de Seguros de la Nación (SSN)."
+      },
+      {
+        "label": "Energy Revenue Protection",
+        "description": "Designed parametric solutions (swap type) against variations in hydroelectric production due to climate hazards."
+      },
+      {
+        "label": "Specialized Risk Diversification",
+        "description": "Creation of climate hazard protections for the tourism sector during holidays and for damage to orchards against frost."
+      }
+    ]
+  },
+
+  "technology": {
+    "title": "Index Accuracy: The Science Behind the Trust.",
+    "sources": [
+      "Vegetation Index (NDVI) via **Sentinel-2** for crop health monitoring.",
+      "Storm and Frost Data via **GOES** for rapid event detection.",
+      "Precipitation Models via **CHIRPS** for historical and real-time coverage.",
+      "Integration of **Radar** data for enhanced precision on hail and intense precipitation."
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "From Reactive Claims to Proactive Protection.",
+    "subtitle": "A satellite-based Early Warning System (EWS) that gives your portfolio a 12-hour head start against climate hazards.",
+    "ctaLabel": "Request a Demo",
+    "ctaLink": "/contact"
+  },
+  
+  "challenge": {
+    "title": "The Climate Paradigm Shift",
+    "subtitle": "Traditional risk models are reactive. Waiting for the claim to happen is no longer a viable strategy.",
+    "points": [
+      {
+        "title": "Increasing Volatility",
+        "description": "Climate volatility in Latin America is increasing the frequency and severity of extreme events like hail and flash floods."
+      },
+      {
+        "title": "Direct Impact",
+        "description": "Storms and strong winds generate thousands of claims annually, directly impacting your combined ratio."
+      },
+      {
+        "title": "The Need for Action",
+        "description": "The industry needs a paradigm shift towards active prevention and customer communication."
+      }
+    ]
+  },
+
+  "solution": {
+    "title": "The Proactive Advantage",
+    "subtitle": "Our EWS protects your policyholders and reduces claims through three key pillars.",
+    "steps": [
+      {
+        "icon": "anticipation",
+        "title": "Anticipation",
+        "description": "Alerts issued with at least 12 hours of lead time before the event impacts the asset."
+      },
+      {
+        "icon": "precision",
+        "title": "Precision",
+        "description": "Identification of risks at a local level with hourly updates and precise geographic detail."
+      },
+      {
+        "icon": "action",
+        "title": "Action",
+        "description": "Enables preventive communication (SMS/App) to policyholders to mitigate damage before it occurs."
+      }
+    ]
+  },
+
+  "tech": {
+    "title": "Exponential Reliability: The 'Ensemble' Approach",
+    "subtitle": "We don't rely on a single forecast. We aggregate the world's best models to eliminate uncertainty.",
+    "description": "Every 6 hours, we combine over 200 unique forecasts, including multiple 'members' of the most advanced ensemble models (EPS). This allows us to quantify probability with superior statistical confidence.",
+    "models": [
+      { "name": "ECMWF (IFS)", "origin": "Europe", "detail": "51 Members - 25km Res" },
+      { "name": "NOAA (GFS)", "origin": "USA", "detail": "31 Members - 13km Res" },
+      { "name": "DWD (ICON)", "origin": "Germany", "detail": "40 Members - 11km Res" },
+      { "name": "UKMO", "origin": "UK", "detail": "Met Office - 10km Res" }
+    ]
+  },
+
+  "integration": {
+    "title": "Seamless API Integration",
+    "subtitle": "Automate risk management directly into your CRM and policy administration systems.",
+    "flow": {
+      "step1": "Insurer Systems (CRM, Policy Admin)",
+      "step2": "ClimaVista API Gateway",
+      "step3": "Automated Alerts (SMS, Email, App)"
+    }
+  },
+
+  "trust": {
+    "title": "Trusted by Industry Leaders",
+    "text": "In Argentina, Allianz relies on the EcoClimaSol Early Warning System to protect its customers and proactively manage climate risks."
+  }
+}

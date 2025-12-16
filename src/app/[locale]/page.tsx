@@ -1,30 +1,46 @@
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-// Nous utilisons le Link client que nous avons créé dans l'étape précédente
-import { Link } from '@/i18n/navigation.client';
+import {
+  getHomeDictionary,
+  type SupportedLocale
+} from "@/i18n/getHomeDictionary";
 
-import HeroSection from '@/components/HeroSection';
-import SocialProofSection from '@/components/SocialProofSection';
-import ProblemStatementSection from '@/components/ProblemStatementSection';
-import IndicatorsSection from '@/components/IndicatorsSection';
-import BenefitsSection from '@/components/BenefitsSection';
-import CtaFinalSection from '@/components/CtaFinalSection';
-import SolutionSection from '@/components/SolutionSection';
-import ValuePropositionSection from '@/components/ValuePropositionSection';
-import ServicesSection from '@/components/ServicesSection';
+import HeroSection from "@/components/home/HeroSection";
+import ClientLogoCarousel from "@/components/home/ClientLogoCarousel";
+import CoreServicesSection from "@/components/home/CoreServicesSection";
+import BenefitsSection from "@/components/home/BenefitsSection";
+import FinalCTASection from "@/components/home/FinalCTASection";
 
-export default function HomePage() {
+export default async function HomePage({
+  params
+}: {
+  // 1. On change le type ici pour indiquer que c'est une Promise
+  params: Promise<{ locale: SupportedLocale }>;
+}) {
+  // 2. On attend (await) la résolution des paramètres avant de les utiliser
+  const { locale } = await params;
+
+  // 3. On utilise la variable "locale" extraite
+  const t = await getHomeDictionary(locale);
+
   return (
-    <main className="min-h-screen bg-white">
-      <HeroSection />
-      <SocialProofSection />
-      <SolutionSection />
-      <ServicesSection />
-      <ValuePropositionSection />
-      <ProblemStatementSection />
-      <IndicatorsSection />
-      <BenefitsSection />
-      <CtaFinalSection />
-    </main>
+    <div className="w-full flex flex-col"> {/* Retrait de gap-20 pour contrôler l'espacement */}
+      <HeroSection data={t.hero} />
+
+      {/* 2. LOGO SECTION (Nouveau) */}
+      <section className="py-8 bg-white">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <h3 className="text-xl font-semibold text-slate-500 mb-8 uppercase tracking-wider">
+            {t.logos.trustedTitle}
+          </h3>
+        </div>
+        <ClientLogoCarousel />
+      </section>
+
+      <section className="py-12 md:py-16 bg-white">
+       <CoreServicesSection data={t.coreServices} />
+       <BenefitsSection data={t.benefits} />
+      </section>
+ 
+      <FinalCTASection data={t.finalCta} />
+    </div>
   );
 }

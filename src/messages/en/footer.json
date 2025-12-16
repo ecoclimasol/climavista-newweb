@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "mission": "We transform climate uncertainty into financial resilience through science-backed, AI-driven insurance and early warning solutions.",
+    
+    "columns": {
+      "solutions": "Our Solutions",
+      "tech": "Technology",
+      "contact_offices": "Offices & Contact"
+    },
+    
+    "links": {
+      "home": "Home",
+      "bi": "Business Intelligence",
+      "parametric": "Parametric Insurance",
+      "early_warning": "Early Warning System",
+      "technology": "Technology & AI",
+      "contact": "Contact",
+      "legal": "Legal Notice",
+      "privacy": "Privacy Policy"
+    },
+    
+    "offices": {
+      "americas_title": "Americas",
+      "americas_address": "Ecoclimasol SA\nTacuari 119-1C\nCABA (1071), Argentina",
+      "global_title": "Europe & Global",
+      "global_address": "Ecoclimasol SASU\nImmeuble MIBI\n672 Rue du Mas Verchant\nCS 37777 - 34967 Montpellier Cedex 02, France",
+      "email": "Email : info@climavista.com"
+    },
+    
+    "copyright": "© 2025 ClimaVista. All rights reserved."
+  }
+}

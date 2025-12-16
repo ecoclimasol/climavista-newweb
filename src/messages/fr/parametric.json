@@ -1,0 +1,81 @@
+{
+    "hero": {
+      "title": "L'Assurance Paramétrique : Là où la Vitesse rencontre la Précision.",
+      "subtitle": "Développez des solutions sur mesure, rapides à opérer, et soutenues par les données climatiques les plus fiables au monde.",
+      "ctaLabel": "Concevoir votre Solution Paramétrique",
+      "ctaLink": "/contact"
+    },
+    
+    "value": {
+      "title": "Débloquer la Valeur où l'Indemnitaire échoue.",
+      "subtitle": "L'assurance paramétrique simplifie la gestion des sinistres et garantit la liquidité post-événement.",
+      "features": [
+        {
+          "icon": "vitesse",
+          "label": "Paiements Quasi-Instantanés",
+          "description": "Les paiements sont déclenchés automatiquement par l'index, éliminant les longs processus d'expertise."
+        },
+        {
+          "icon": "cout",
+          "label": "Réduction des Coûts Opérationnels",
+          "description": "Les coûts d'expertise et d'administration des sinistres sont réduits au strict minimum."
+        },
+        {
+          "icon": "transparence",
+          "label": "Transparence Totale",
+          "description": "Les règles de déclenchement sont claires dès le départ, éliminant les litiges avec les assurés."
+        }
+      ]
+    },
+    
+    "process": {
+      "title": "Notre Processus : Du Risque Sur Mesure à l'Implémentation Opérationnelle.",
+      "subtitle": "Nous travaillons avec vos équipes pour créer un produit paramétrique fiable, simple à opérer et adapté à vos agriculteurs.",
+      "steps": [
+        {
+          "icon": "design",
+          "label": "Design du Déclencheur",
+          "description": "Définition de l'index climatique (température, précipitations, indice de santé végétale) et validation du 'basis risk' via backtesting."
+        },
+        {
+          "icon": "data",
+          "label": "Certification des Données",
+          "description": "Utilisation de sources de données certifiées (GOES, Sentinel, CHIRPS) pour garantir la traçabilité et l'intégrité de l'index."
+        },
+        {
+          "icon": "operation",
+          "label": "Mise en œuvre et Opérations",
+          "description": "Intégration complète dans la plateforme ClimaVista pour une gestion simple de la police et un calcul automatique du paiement."
+        }
+      ]
+    },
+
+    "expertise": {
+      "title": "Une Expertise Confirmée par l'Industrie et les Régulateurs.",
+      "subtitle": "Nous ne concevons pas seulement des produits, nous validons leur fiabilité sur le terrain et devant les autorités.",
+      "cases": [
+        {
+          "label": "Soin réglementaire en Argentine",
+          "description": "Développement de la première assurance paramétrique sécheresse pour maïs et soja homologuée par la Superintendencia de Seguros de la Nación (SSN)."
+        },
+        {
+          "label": "Protection des Revenus Énergétiques",
+          "description": "Conception de solutions paramétriques (type swap) contre la variation de production hydroélectrique due aux aléas climatiques."
+        },
+        {
+          "label": "Diversification de Risques Spécialisés",
+          "description": "Création de protections contre les aléas climatiques pour le secteur du tourisme pendant les vacances et les dommages aux vergers contre le gel."
+        }
+      ]
+    },
+
+    "technology": {
+      "title": "La Précision de l'Index : La Science derrière la Confiance.",
+      "sources": [
+        "Index de Végétation (NDVI) via **Sentinel-2** pour le suivi de la santé des cultures.",
+        "Données de Tempête et Gel via **GOES** pour la détection rapide d'événements.",
+        "Modèles de Précipitations via **CHIRPS** pour une couverture historique et en temps réel.",
+        "Intégration de données **Radar** pour une précision accrue sur la grêle et les précipitations intenses."
+      ]
+    }
+  }

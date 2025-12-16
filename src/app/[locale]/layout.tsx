@@ -1,70 +1,99 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import Image from 'next/image';
-import {Link} from '@/i18n/navigation.client'; // Importe depuis notre nouveau fichier client
-import "../globals.css"; // Référence au CSS global de Tailwind
+import Image from "next/image"; 
+import type { ReactNode } from "react";
+import Link from "next/link";
+// Import existant pour la navbar et le type de locale
+import { getNavbarDictionary, type SupportedLocale } from "@/i18n/getHomeDictionary";
+import "../globals.css"; 
+import LanguageSwitcher from '@/components/LanguageSwitcher'; 
 
-// C'est ici qu'on utilise le code corrigé pour Next.js 16 (await params)
+// ⚠️ NOUVEAUX IMPORTS POUR LE FOOTER
+import { getFooterDictionary } from "@/i18n/getFooterDictionary";
+import Footer from "@/components/Footer"; // Assurez-vous que le chemin est correct
+
+const SUPPORTED = ["en", "fr", "es", "pt"] as const;
+
 export default async function LocaleLayout({
   children,
   params
 }: {
-  children: React.ReactNode;
-  params: Promise<{locale: string}>; 
+  children: ReactNode;
+  params: Promise<{ locale: SupportedLocale }>;
 }) {
-  const { locale } = await params; // Le "await" est crucial pour Next.js 16
+  const { locale } = await params;
+  const currentLocale = SUPPORTED.includes(locale) ? locale : "fr";
   
-  const messages = await getMessages();
+  // 1. CHARGEMENT EXISTANT DES DONNÉES DE LA NAVBAR
+  const navT = await getNavbarDictionary(currentLocale);
+  
+  // 2. CHARGEMENT DES DONNÉES DU FOOTER
+  const footerData = await getFooterDictionary(currentLocale);
 
   return (
-    <html lang={locale}>
-      <body className="font-sans antialiased bg-gray-50 min-h-screen">
-        <NextIntlClientProvider messages={messages}>
-            {/* Barre de navigation : Logo et sélecteur de langue */}
-            <nav className="bg-white shadow-md p-4 flex justify-between items-center">
-                <div className="flex items-center">
-                    {/* Logo AGRITEMIS (top-left) */}
-                    <div className="w-48 h-auto relative">
-                        <Image 
-                            src="/logo_agritemis.png" 
-                            alt="Agritemis Logo" 
-                            width={3514} 
-                            height={512} 
-                            style={{objectFit: "contain"}}
-                            priority
-                        />
-                    </div>
-                </div>
-                {/* Navigation Principale */}
-                <div className="space-x-4">
-                    <Link href="/" className="hover:text-green-600 font-bold">Home</Link>
-                    <Link href="/vitiscore" className="hover:text-green-600 font-bold">VitiScore</Link>
-                    <Link href="/chatbot" className="hover:text-green-600 font-bold">ChatBot IA</Link>
-                    <Link href="/planetscore" className="hover:text-green-600 font-bold">PlanetScore</Link>
-                    <Link href="/blog" className="hover:text-green-600 font-bold">Blog</Link>
-                </div>
-                {/* Sélecteur de langue */}
-                <div className="space-x-2 text-sm">
-                    <Link href="/" locale="fr" className="text-gray-500 hover:text-black font-medium">FR</Link>
-                    <span className="text-gray-300">|</span>
-                    <Link href="/" locale="en" className="text-gray-500 hover:text-black font-medium">EN</Link>
-                    <span className="text-gray-300">|</span>
-                    <Link href="/" locale="es" className="text-gray-500 hover:text-black font-medium">ES</Link>
-                </div>
+    <html lang={currentLocale}>
+      <body className="bg-slate-50 text-slate-900 antialiased">
+        
+        {/* HEADER EXISTANT (inchangé) */}
+        <header className="absolute top-0 left-0 right-0 z-50 w-full border-b border-white/10">
+          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+
+            {/* 2. NOUVEAU BLOC LOGO AVEC IMAGE */}
+            <Link href={`/${currentLocale}`} className="flex items-center group">
+              <Image
+                src="/logo-climavista-blanco.png" 
+                alt="ClimaVista Logo" 
+                // Ces props sont nécessaires pour Next/Image (ajustez si besoin)
+                width={150} 
+                height={30} 
+                className="w-[150px] h-auto object-contain"
+              />
+            </Link>
+
+            {/* Navigation */}
+            <nav className="hidden space-x-6 text-sm font-semibold text-white lg:flex">
+              <Link href={`/${currentLocale}`} className="hover:text-blue-300 transition-colors">
+                {navT.home}
+              </Link>
+              <Link href={`/${currentLocale}/parametric`} className="hover:text-blue-300 transition-colors">
+                {navT.parametric}
+              </Link>
+              <Link href={`/${currentLocale}/early-warning`} className="hover:text-blue-300 transition-colors">
+                {navT.earlywarning}
+              </Link>
+              <Link href={`/${currentLocale}/technology`} className="hover:text-blue-300 transition-colors">
+                {navT.technology}
+              </Link>
+              <Link href={`/${currentLocale}/about`} className="hover:text-blue-300 transition-colors">
+                {navT.about}
+              </Link>
             </nav>
 
-            {/* Contenu principal */}
-            <main className="p-8">
-                {children}
-            </main>
+            {/* CTA & LANG SWITCHER (Nouvelle implémentation) */}
+            <div className="flex items-center gap-4">
+              
+              {/* NOUVEAU CTA "Connect" */}
+              <a 
+                href="https://seguros.climavista.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="rounded-full bg-white px-4 py-1.5 text-sm font-bold text-slate-900 shadow-md transition-colors hover:bg-slate-100 hidden md:block"
+              >
+                Connect
+              </a>
+              
+              {/* Le sélecteur de langue */}
+              <LanguageSwitcher /> 
+              
+            </div>
+          </div>
+        </header>
 
-            {/* Footer global */}
-          <Footer />
-          
-        </NextIntlClientProvider>
+        <main className="min-h-screen w-full">
+            {children}
+        </main>
+
+        {/* ⚠️ NOUVEAU FOOTER: Remplacement de l'ancien footer inline */}
+        <Footer data={footerData.footer} locale={currentLocale} />
       </body>
     </html>
   );
 }
-import Footer from "@/components/Footer";
-
