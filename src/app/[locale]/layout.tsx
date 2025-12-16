@@ -1,15 +1,15 @@
 import Image from "next/image"; 
 import type { ReactNode } from "react";
 import Link from "next/link";
-// Import existant pour la navbar et le type de locale
 import { getNavbarDictionary, type SupportedLocale } from "@/i18n/getHomeDictionary";
 import "../globals.css"; 
 import LanguageSwitcher from '@/components/LanguageSwitcher'; 
 
-// ⚠️ NOUVEAUX IMPORTS POUR LE FOOTER
+// Imports du Footer
 import { getFooterDictionary } from "@/i18n/getFooterDictionary";
-import Footer from "@/components/Footer"; // Assurez-vous que le chemin est correct
+import Footer from "@/components/Footer";
 
+// Langues supportées
 const SUPPORTED = ["en", "fr", "es", "pt"] as const;
 
 export default async function LocaleLayout({
@@ -17,38 +17,48 @@ export default async function LocaleLayout({
   params
 }: {
   children: ReactNode;
-  params: Promise<{ locale: SupportedLocale }>;
+  // REMPLACEZ PAR CECI :
+  params: Promise<{ locale: string }>; 
 }) {
-  const { locale } = await params;
-  const currentLocale = SUPPORTED.includes(locale) ? locale : "fr";
+  const resolvedParams = await params;
+  const localeFromParams = resolvedParams.locale;
+
+  // Validation de la locale : si inconnue, on force "fr"
+  const currentLocale: SupportedLocale = (SUPPORTED as readonly string[]).includes(localeFromParams)
+    ? (localeFromParams as SupportedLocale)
+    : "fr";
   
-  // 1. CHARGEMENT EXISTANT DES DONNÉES DE LA NAVBAR
+  // Chargement des dictionnaires
   const navT = await getNavbarDictionary(currentLocale);
   
-  // 2. CHARGEMENT DES DONNÉES DU FOOTER
-  const footerData = await getFooterDictionary(currentLocale);
+  // 2. Récupération flexible des données du Footer
+  // On utilise 'any' temporairement pour vérifier la structure sans blocage TS
+  const rawFooterData: any = await getFooterDictionary(currentLocale);
+  
+  // 3. Extraction intelligente : on prend .footer s'il existe, sinon on prend l'objet entier
+  // Cela résout le conflit de structure entre vos fichiers JSON
+  const finalFooterData = rawFooterData.footer ? rawFooterData.footer : rawFooterData;
 
   return (
     <html lang={currentLocale}>
       <body className="bg-slate-50 text-slate-900 antialiased">
         
-        {/* HEADER EXISTANT (inchangé) */}
+        {/* HEADER */}
         <header className="absolute top-0 left-0 right-0 z-50 w-full border-b border-white/10">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
-            {/* 2. NOUVEAU BLOC LOGO AVEC IMAGE */}
+            {/* Logo */}
             <Link href={`/${currentLocale}`} className="flex items-center group">
               <Image
                 src="/logo-climavista-blanco.png" 
                 alt="ClimaVista Logo" 
-                // Ces props sont nécessaires pour Next/Image (ajustez si besoin)
                 width={150} 
                 height={30} 
                 className="w-[150px] h-auto object-contain"
               />
             </Link>
 
-            {/* Navigation */}
+            {/* Navigation Desktop */}
             <nav className="hidden space-x-6 text-sm font-semibold text-white lg:flex">
               <Link href={`/${currentLocale}`} className="hover:text-blue-300 transition-colors">
                 {navT.home}
@@ -67,10 +77,8 @@ export default async function LocaleLayout({
               </Link>
             </nav>
 
-            {/* CTA & LANG SWITCHER (Nouvelle implémentation) */}
+            {/* CTA & Langue */}
             <div className="flex items-center gap-4">
-              
-              {/* NOUVEAU CTA "Connect" */}
               <a 
                 href="https://seguros.climavista.com" 
                 target="_blank" 
@@ -79,20 +87,19 @@ export default async function LocaleLayout({
               >
                 Connect
               </a>
-              
-              {/* Le sélecteur de langue */}
               <LanguageSwitcher /> 
-              
             </div>
           </div>
         </header>
 
+        {/* CONTENU PRINCIPAL */}
         <main className="min-h-screen w-full">
             {children}
         </main>
 
-        {/* ⚠️ NOUVEAU FOOTER: Remplacement de l'ancien footer inline */}
-        <Footer data={footerData.footer} locale={currentLocale} />
+        {/* FOOTER (avec les données nettoyées) */}
+        <Footer data={finalFooterData} locale={currentLocale} />
+
       </body>
     </html>
   );
