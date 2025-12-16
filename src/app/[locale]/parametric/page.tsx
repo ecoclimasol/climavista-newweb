@@ -1,7 +1,12 @@
 // src/app/[locale]/parametric/page.tsx
 
 // ⚠️ Mettez à jour cet import pour pointer vers la nouvelle fonction de dictionnaire
-import { getParametricDictionary, type SupportedLocale } from "@/i18n/getParametricDictionary"; 
+// 1. Importez la fonction depuis son fichier dédié
+import { getParametricDictionary } from "@/i18n/getParametricDictionary";
+
+// 2. Importez le TYPE depuis le fichier principal (là où il est défini)
+import { type SupportedLocale } from "@/i18n/getHomeDictionary";
+
 import Link from 'next/link';
 import React from 'react';
 

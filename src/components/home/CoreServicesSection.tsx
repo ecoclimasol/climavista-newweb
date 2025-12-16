@@ -1,7 +1,8 @@
-// components/home/CoreServicesSection.tsx
+// src/components/home/CoreServicesSection.tsx
 import React from 'react';
 
 // Placeholders d'icônes
+// La fonction accepte une string, donc elle fonctionnera même si le type est générique
 const getIcon = (name: string) => {
   switch (name) {
     case 'BI': return <span className="text-4xl text-blue-600">📊</span>;
@@ -12,10 +13,12 @@ const getIcon = (name: string) => {
 };
 
 type ServicePillar = {
-  id: 'BI' | 'Parametric' | 'Alerts';
+  // ⚠️ CORRECTION ICI : Changement de l'union littérale vers 'string' simple
+  // Cela permet d'accepter les données du JSON sans erreur de typage
+  id: string; 
   title: string;
   description: string;
-  focus: string; // La phrase clé
+  focus: string;
 };
 
 type CoreServicesData = {

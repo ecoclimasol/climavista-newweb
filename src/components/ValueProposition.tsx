@@ -9,6 +9,7 @@ import Link from 'next/link';
 
 // Types des données (basés sur votre home.json)
 type ValuePropositionData = {
+  bigtitle: string; // <--- AJOUTEZ CETTE LIGNE (C'est ce qui manquait)
   title: string;
   subtitle: string;
   todayTitle: string;

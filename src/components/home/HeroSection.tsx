@@ -1,11 +1,37 @@
 // src/components/home/HeroSection.tsx
+import React from 'react';
 import Link from 'next/link';
-// 1. Import du nouveau composant Client
 import HeroImageCarousel from './HeroImageCarousel'; 
 
-// ... (Gardez vos types inchangés) ...
+// --- 1. DÉFINITION DES TYPES (C'est ce qu'il manquait) ---
+
+// Type pour un élément de la liste "highlights" (insights)
+interface HeroHighlight {
+  title: string;
+  description?: string;
+}
+
+// Type pour l'objet de données complet venant du JSON
+export interface HeroData {
+  badge?: string;
+  title: string;
+  subtitle: string;
+  primaryCta: string;
+  secondaryCta?: string;
+  insightsTitle?: string;
+  viewMore?: string;
+  highlights?: HeroHighlight[];
+}
+
+// Type pour les props du composant
+export interface HeroSectionProps {
+  data: HeroData;
+}
+
+// --- 2. LE COMPOSANT ---
 
 export default function HeroSection({ data }: HeroSectionProps) {
+  // On déstructure les données pour les utiliser facilement
   const { 
     badge, title, subtitle, primaryCta, secondaryCta, 
     highlights, insightsTitle, viewMore 
@@ -17,7 +43,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
       {/* NOUVEAU BLOC CARROUSEL */}
       <HeroImageCarousel />
       
-      {/* Overlays pour lisibilité (À laisser, ils se superposent au carrousel) */}
+      {/* Overlays pour lisibilité (Ils se superposent au carrousel) */}
       <div className="absolute inset-0 z-10 bg-slate-900/20 mix-blend-multiply" />
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent" />
 
@@ -31,7 +57,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               {badge}
             </div>
           )}
-          {/* ... (suite du titre et sous-titre) ... */}
+          
           <div className="space-y-4">
             <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
               {title}
@@ -42,22 +68,27 @@ export default function HeroSection({ data }: HeroSectionProps) {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="group relative overflow-hidden rounded-sm bg-white px-8 py-3 text-sm font-bold text-slate-900 transition-all hover:bg-blue-50">
+            <Link href="/contact" className="group relative overflow-hidden rounded-sm bg-white px-8 py-3 text-sm font-bold text-slate-900 transition-all hover:bg-blue-50">
               <span className="relative z-10">{primaryCta}</span>
-            </button>
+            </Link>
+             {/* Bouton secondaire optionnel */}
+            {secondaryCta && (
+                <Link href="/technology" className="rounded-sm border border-white/30 px-8 py-3 text-sm font-bold transition-all hover:bg-white/10">
+                    {secondaryCta}
+                </Link>
+            )}
          </div>
         </div>
 
         {/* --- COLONNE DROITE : Insights Card --- */}
         <div className="w-full max-w-md shrink-0 md:mt-12">
-          {/* ... (votre carte d'insights ici) ... */}
            <div className="overflow-hidden rounded-xl border border-white/10 bg-slate-900/60 backdrop-blur-md shadow-2xl">
             <div className="border-b border-white/10 bg-white/5 px-6 py-4">
               <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">
                 {insightsTitle || "Portfolio Insights"}
               </h3>
             </div>
-            {/* ... (contenu de la carte) ... */}
+            
              <div className="p-6">
               {highlights && highlights.length > 0 ? (
                 <ul className="space-y-6">

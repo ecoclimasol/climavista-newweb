@@ -1,6 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import { getEarlyWarningDictionary, type SupportedLocale } from "@/i18n/getEarlyWarningDictionay"; 
+import { getEarlyWarningDictionary } from "@/i18n/getEarlyWarningDictionary";
+
+// 2. Import du TYPE depuis le fichier source (souvent getHomeDictionary)
+import { SupportedLocale } from "@/i18n/getHomeDictionary";
 
 // --- Icônes (Placeholders) ---
 const getIcon = (name: string) => {

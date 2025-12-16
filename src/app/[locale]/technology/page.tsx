@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { getTechnologyDictionary, type SupportedLocale } from "@/i18n/getTechnologyDictionay"; 
-
+import { getTechnologyDictionary } from "@/i18n/getTechnologyDictionay"; 
+// 2. Importez le TYPE depuis le fichier principal (là où il est défini)
+import { type SupportedLocale } from "@/i18n/getHomeDictionary";
 
 export default async function TechnologyPage({ params }: { params: { locale: SupportedLocale } }) {
   const { locale } = params;
