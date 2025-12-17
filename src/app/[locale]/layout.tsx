@@ -63,6 +63,9 @@ export default async function LocaleLayout({
               <Link href={`/${currentLocale}`} className="hover:text-blue-300 transition-colors">
                 {navT.home}
               </Link>
+              <Link href={`/${currentLocale}/platform`} className="hover:text-blue-300 transition-colors">
+                {navT.platform}
+              </Link>
               <Link href={`/${currentLocale}/parametric`} className="hover:text-blue-300 transition-colors">
                 {navT.parametric}
               </Link>
